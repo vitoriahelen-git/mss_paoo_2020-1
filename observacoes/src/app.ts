@@ -41,7 +41,7 @@ app.post('/lembretes/:id/observacoes', (req, res) => {
     observacoesDoLembrete.push({id: idObs, texto})
    //5. Atualizar o ponteiro na base global para que ele aponte para a colecao que conte nova observacao
    observacoes[req.params.id] = observacoesDoLembrete 
-   //5. Responder para o cliente com status 201 e entregando a ele a colecao atualizada
+   //6. Responder para o cliente com status 201 e entregando a ele a colecao atualizada
    res.status(201).json(observacoesDoLembrete)
 
 })
