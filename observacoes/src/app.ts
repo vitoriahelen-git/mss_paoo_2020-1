@@ -39,12 +39,14 @@ app.post('/lembretes/:id/observacoes', (req, res) => {
     const observacoesDoLembrete: Observacao[] = observacoes[req.params.id] || []
    //4. Na colecao pega no passo anterior adiciona um novo objeto caracterizado por id e texto
     observacoesDoLembrete.push({id: idObs, texto})
+   //5. Atualizar o ponteiro na base global para que ele aponte para a colecao que conte nova observacao
+   observacoes[req.params.id] = observacoesDoLembrete 
    //5. Responder para o cliente com status 201 e entregando a ele a colecao atualizada
    res.status(201).json(observacoesDoLembrete)
 
 })
 
-app.get('lembretes/:id/observacoes', (req, res) => {
+app.get('/lembretes/:id/observacoes', (req, res) => {
     res.json(observacoes[req.params.id] || [])
 })
 
