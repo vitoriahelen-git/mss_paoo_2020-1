@@ -1,0 +1,55 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "20241_fatec_ipi_paoo_mss",
+    "dateExported": "2024-04-03T18:26:41.828Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6fd2a0e5-b6d8-460b-9739-b5f81620ba51",
+            "name": "lembretes ",
+            "containerId": "",
+            "created": "2024-04-03T18:14:03.525Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e544cba3-5557-49a7-8865-d4b44d044f7f",
+            "name": "observacoes",
+            "containerId": "",
+            "created": "2024-04-03T18:14:09.150Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "eb898a93-f538-435d-b946-3ab45cef7ab8",
+            "colId": "58b3163f-a7d0-43cb-8403-7a10661d13cc",
+            "containerId": "6fd2a0e5-b6d8-460b-9739-b5f81620ba51",
+            "name": "Salvar lembretes",
+            "url": "localhost:4000/lembretes",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-03T18:15:15.167Z",
+            "modified": "2024-04-03T18:19:43.640Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"Fazer café\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6fb6ec9c-a25b-40ce-ac07-ee46db20c4b7",
+            "colId": "58b3163f-a7d0-43cb-8403-7a10661d13cc",
+            "containerId": "6fd2a0e5-b6d8-460b-9739-b5f81620ba51",
+            "name": "Obter lembretes",
+            "url": "",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-03T18:22:58.053Z",
+            "modified": "2024-04-03T18:22:58.054Z",
+            "headers": []
+        }
+    ]
+}
